@@ -15,7 +15,7 @@ function Lists({ items, onDeleteItem, onToggleItem, onClearList }) {
         ))}
       </ul>
       <div>
-        <button onClick={onClearList}>Delete</button>
+        <button onClick={onClearList}>Finished For Today</button>
       </div>
     </div>
   );

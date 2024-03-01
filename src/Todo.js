@@ -5,14 +5,14 @@ function Todo({ item, onDeleteItem, onToggleItem }) {
     <li>
       <input
         type="checkbox"
-        value={item.done}
+        checked={item.done}
         onChange={() => onToggleItem(item.id)}
       />
       <span style={item.done ? { textDecoration: "line-through" } : {}}>
         {item.quantity} {item.description}
       </span>
 
-      <button onClick={() => onDeleteItem(item.id)}>Delete</button>
+      <button onClick={() => onDeleteItem(item.id)}>❌</button>
     </li>
   );
 }
